@@ -37,6 +37,7 @@ export default class WooCommerceRestApi {
 
     this.classVersion = "1.0.1";
     this._setDefaultsOptions(opt);
+    this._setInterceptorAuth();
   }
 
   /**
@@ -57,6 +58,19 @@ export default class WooCommerceRestApi {
     this.timeout = opt.timeout;
     this.axiosConfig = opt.axiosConfig || {};
     this.axiosInstance = opt.axiosInstance || axios;
+  }
+
+  _setInterceptorAuth() {
+    if (this.axiosInstance) {
+      this.axiosInstance.interceptors.request.use(async config => {
+        const oAuthParams = this._getOAuth().authorize({
+          url: config.url,
+          method: config.method
+        });
+        config.params = { ...config.params, ...oAuthParams };
+        return config;
+      });
+    }
   }
 
   /**
@@ -224,11 +238,6 @@ export default class WooCommerceRestApi {
       }
 
       options.params = { ...options.params, ...params };
-    } else {
-      options.params = this._getOAuth().authorize({
-        url: url,
-        method: method
-      });
     }
 
     if (data) {
