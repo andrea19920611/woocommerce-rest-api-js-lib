@@ -1,23 +1,31 @@
 {
-  "name": "@woocommerce/woocommerce-rest-api",
-  "version": "1.0.1",
-  "description": "WooCommerce REST API - JavaScript Library",
-  "author": "Automattic",
+  "name": "@andrea_19920611/woocommerce-rest-api",
+  "version": "1.0.2",
+  "description": "WooCommerce A4 REST API - JavaScript Library",
+  "author": "Andrea Bacci",
+  "maintainers": [
+    {
+      "email": "andrea.bacci92@gmail.com",
+      "name": "Andrea Bacci",
+      "url": "https://www.linkedin.com/in/andrea-bacci-19920611/"
+    }
+  ],
   "license": "MIT",
   "keywords": [
     "wordpress",
     "woocommerce",
     "rest",
     "promise",
-    "node"
+    "node",
+    "axios"
   ],
-  "homepage": "https://github.com/woocommerce/woocommerce-rest-api-js-lib",
+  "homepage": "https://github.com/andrea19920611/woocommerce-rest-api-js-lib",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/woocommerce/woocommerce-rest-api-js-lib.git"
+    "url": "git+https://github.com/andrea19920611/woocommerce-rest-api-js-lib"
   },
   "bugs": {
-    "url": "https://github.com/woocommerce/woocommerce-rest-api-js-lib/issues"
+    "url": "https://github.com/andrea19920611/woocommerce-rest-api-js-lib/issues"
   },
   "main": "index",
   "types": "index.d.ts",
