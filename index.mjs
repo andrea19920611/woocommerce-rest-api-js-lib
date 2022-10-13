@@ -224,22 +224,6 @@ export default class WooCommerceRestApi {
       headers
     };
 
-    if (this.isHttps) {
-      if (this.queryStringAuth) {
-        options.params = {
-          consumer_key: this.consumerKey,
-          consumer_secret: this.consumerSecret
-        };
-      } else {
-        options.auth = {
-          username: this.consumerKey,
-          password: this.consumerSecret
-        };
-      }
-
-      options.params = { ...options.params, ...params };
-    }
-
     if (data) {
       options.headers["Content-Type"] = "application/json;charset=utf-8";
       options.data = JSON.stringify(data);
