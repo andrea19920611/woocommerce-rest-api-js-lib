@@ -7,8 +7,8 @@ describe("#options", () => {
   test("wpAPIPrefix should set WP REST API custom path", () => {
     const api = new WooCommerceRestApi({
       url: "http://wordpress-test.local",
-      consumerKey: "ck_60eb555ee3202bb54ffe3bd0b781ae0d6f7b4d09",
-      consumerSecret: "cs_b0b41a746d19e74cc3c085d502995fb58a6be046",
+      consumerKey: "ck_cee113b5b6b8fc889db0a6307e286175dd4cbb1d",
+      consumerSecret: "cs_3b21829b70c9a0ee9231ae7c851bc95d5ff33438",
       wpAPIPrefix: "wp-rest",
       version: "wc/v3"
     });
@@ -24,8 +24,8 @@ describe("#options", () => {
 describe("#methods", () => {
   const api = new WooCommerceRestApi({
     url: "http://wordpress-test.local",
-    consumerKey: "ck_60eb555ee3202bb54ffe3bd0b781ae0d6f7b4d09",
-    consumerSecret: "cs_b0b41a746d19e74cc3c085d502995fb58a6be046",
+    consumerKey: "ck_cee113b5b6b8fc889db0a6307e286175dd4cbb1d",
+    consumerSecret: "cs_3b21829b70c9a0ee9231ae7c851bc95d5ff33438",
     version: "wc/v3"
   });
 
@@ -55,8 +55,8 @@ describe("#requests", () => {
 
   const api = new WooCommerceRestApi({
     url: "http://wordpress-test.local",
-    consumerKey: "ck_60eb555ee3202bb54ffe3bd0b781ae0d6f7b4d09",
-    consumerSecret: "cs_b0b41a746d19e74cc3c085d502995fb58a6be046",
+    consumerKey: "ck_cee113b5b6b8fc889db0a6307e286175dd4cbb1d",
+    consumerSecret: "cs_3b21829b70c9a0ee9231ae7c851bc95d5ff33438",
     version: "wc/v3"
   });
 
@@ -130,8 +130,8 @@ describe("#requests", () => {
     expect.assertions(1);
     const oAuth = new WooCommerceRestApi({
       url: "http://test.dev",
-      consumerKey: "ck_60eb555ee3202bb54ffe3bd0b781ae0d6f7b4d09",
-      consumerSecret: "cs_b0b41a746d19e74cc3c085d502995fb58a6be046",
+      consumerKey: "ck_cee113b5b6b8fc889db0a6307e286175dd4cbb1d",
+      consumerSecret: "cs_3b21829b70c9a0ee9231ae7c851bc95d5ff33438",
       version: "wc/v3"
     });
 
