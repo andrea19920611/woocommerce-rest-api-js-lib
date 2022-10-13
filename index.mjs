@@ -160,11 +160,7 @@ export default class WooCommerceRestApi {
       url = url.replace(hostname, hostname + ":" + this.port);
     }
 
-    if (!this.isHttps) {
-      return this._normalizeQueryString(url, params);
-    }
-
-    return url;
+    return this._normalizeQueryString(url, params);
   }
 
   /**
